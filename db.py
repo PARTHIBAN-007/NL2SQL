@@ -36,11 +36,5 @@ cursor.executemany(
     jobs_data
 
 )
-print("-------------Data in the Database------------------")
-cursor.execute("Select * from jobs;")
-response = cursor.fetchall()
-for row in response:
-    print(row)
-conn.commit()
-conn.close()
+
 print("----------------Values Stored in Database Successfully---------------------")
